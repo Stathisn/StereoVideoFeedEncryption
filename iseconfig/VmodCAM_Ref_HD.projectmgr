@@ -19,13 +19,13 @@
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Elod|Documents|ISE_Projects|VmodCAM_Ref_HD|VmodCAM_Ref.vhd/Inst_camctlB - CamCtl - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>VmodCAM_Ref - Behavioral (C:/Users/Elod/Documents/ISE_Projects/VmodCAM_Ref_HD/VmodCAM_Ref.vhd)</SelectedItem>
+         <SelectedItem>VmodCAM_Ref - Behavioral (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/VmodCAM_Ref.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015f000000020000000000000000000000000000000064ffffffff0000008100000000000000020000015f0000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>VmodCAM_Ref - Behavioral (C:/Users/Elod/Documents/ISE_Projects/VmodCAM_Ref_HD/VmodCAM_Ref.vhd)</CurrentItem>
+      <CurrentItem>VmodCAM_Ref - Behavioral (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/VmodCAM_Ref.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -48,7 +48,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000001b10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>atlys.ucf</CurrentItem>
    </ItemView>
@@ -78,7 +78,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000126000000010000000100000000000000000000000064ffffffff000000810000000000000001000001260000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>

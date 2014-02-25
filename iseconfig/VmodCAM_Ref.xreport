@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2011-07-28T19:30:09</DateModified>
+  <DateModified>2014-02-25T22:54:26</DateModified>
   <ModuleName>VmodCAM_Ref</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Elod/Documents/ISE_Projects/VmodCAM_Ref_HD/iseconfig/VmodCAM_Ref.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Elod/Documents/ISE_Projects/VmodCAM_Ref_HD\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/iseconfig/VmodCAM_Ref.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption\</ImplementationReportsDirectory>
   <DateInitialized>2011-04-19T20:40:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
