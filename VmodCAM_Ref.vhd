@@ -135,6 +135,9 @@ signal FbRdy, FbRdEn, FbRdRst, FbRdClk : std_logic;
 signal FbRdData : std_logic_vector(16-1 downto 0);
 signal FbWrARst, FbWrBRst, int_FVA, int_FVB : std_logic;
 
+signal camAtoDDRsig : std_logic_vector(15 downto 0);
+signal switchOutSig : std_logic_vector(7 downto 0);
+
 begin
 
 LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
@@ -151,7 +154,7 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		CLK_O => open,
 		RSTN_I => RESET_I,
 		SW_I => SW_I,
-		SW_O => open,
+		SW_O => switchOutSig, --open,
 		RSEL_O => open, --resolution selector synchronized with PClk
 		MSEL_O => MSel, --mode selector synchronized with PClk
 		CAMCLK_O => CamClk,
@@ -188,6 +191,10 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 ----------------------------------------------------------------------------------
 -- Frame Buffer
 ----------------------------------------------------------------------------------
+
+	camAtoDDRsig <= CamAD xor switchOutSig(0) & switchOutSig(0) & switchOutSig(0) & switchOutSig(0) & switchOutSig(1) & switchOutSig(1) & switchOutSig(1) & switchOutSig(1) & switchOutSig(2) & switchOutSig(2) & switchOutSig(2) & switchOutSig(2) & switchOutSig(3) & switchOutSig(3) & switchOutSig(3) & switchOutSig(3); -- Modified to test ability to change the RGB
+												  -- signal coming from CAMERA A.
+
 	Inst_FBCtl: entity work.FBCtl 
 	GENERIC MAP (
 		DEBUG_EN => 0,
@@ -203,7 +210,7 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		
 		ENA => CamADV,
 		RSTA_I => FbWrARst,
-		DIA => CamAD,
+		DIA => camAtoDDRsig, --CamAD,
 		CLKA => CamAPClk,
 		
 		ENB => CamBDV,
