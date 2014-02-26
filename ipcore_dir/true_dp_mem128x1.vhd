@@ -26,8 +26,8 @@
 --    All rights reserved.                                                    --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
--- You must compile the wrapper file true_dp_ram_128x1.vhd when simulating
--- the core, true_dp_ram_128x1. When compiling the wrapper file, be sure to
+-- You must compile the wrapper file true_dp_mem128x1.vhd when simulating
+-- the core, true_dp_mem128x1. When compiling the wrapper file, be sure to
 -- reference the XilinxCoreLib VHDL simulation library. For detailed
 -- instructions, please refer to the "CORE Generator Help".
 
@@ -40,7 +40,7 @@ USE ieee.std_logic_1164.ALL;
 -- synthesis translate_off
 LIBRARY XilinxCoreLib;
 -- synthesis translate_on
-ENTITY true_dp_ram_128x1 IS
+ENTITY true_dp_mem128x1 IS
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -53,11 +53,11 @@ ENTITY true_dp_ram_128x1 IS
     dinb : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
     doutb : OUT STD_LOGIC_VECTOR(127 DOWNTO 0)
   );
-END true_dp_ram_128x1;
+END true_dp_mem128x1;
 
-ARCHITECTURE true_dp_ram_128x1_a OF true_dp_ram_128x1 IS
+ARCHITECTURE true_dp_mem128x1_a OF true_dp_mem128x1 IS
 -- synthesis translate_off
-COMPONENT wrapped_true_dp_ram_128x1
+COMPONENT wrapped_true_dp_mem128x1
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -73,7 +73,7 @@ COMPONENT wrapped_true_dp_ram_128x1
 END COMPONENT;
 
 -- Configuration specification
-  FOR ALL : wrapped_true_dp_ram_128x1 USE ENTITY XilinxCoreLib.blk_mem_gen_v7_3(behavioral)
+  FOR ALL : wrapped_true_dp_mem128x1 USE ENTITY XilinxCoreLib.blk_mem_gen_v7_3(behavioral)
     GENERIC MAP (
       c_addra_width => 1,
       c_addrb_width => 1,
@@ -140,7 +140,7 @@ END COMPONENT;
 -- synthesis translate_on
 BEGIN
 -- synthesis translate_off
-U0 : wrapped_true_dp_ram_128x1
+U0 : wrapped_true_dp_mem128x1
   PORT MAP (
     clka => clka,
     wea => wea,
@@ -155,4 +155,4 @@ U0 : wrapped_true_dp_ram_128x1
   );
 -- synthesis translate_on
 
-END true_dp_ram_128x1_a;
+END true_dp_mem128x1_a;

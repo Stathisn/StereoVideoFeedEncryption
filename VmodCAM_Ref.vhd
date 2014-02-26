@@ -135,6 +135,10 @@ signal FbRdy, FbRdEn, FbRdRst, FbRdClk : std_logic;
 signal FbRdData : std_logic_vector(16-1 downto 0);
 signal FbWrARst, FbWrBRst, int_FVA, int_FVB : std_logic;
 
+-- Bit converter signals
+signal UpConvOutSig : std_logic_vector(127 downto 0);
+signal DownConvOutSig : std_logic_vector(15 downto 0);
+
 begin
 
 LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
@@ -185,6 +189,32 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		VCNT_O => VtcVCnt
 	);
 	VtcRst <= async_rst or not FbRdy;
+	
+	
+	
+----------------------------------------------------------------------------------
+-- Up Converter A
+----------------------------------------------------------------------------------
+	Inst_UpConverterA: entity work.BitUpConverter16to128 PORT MAP (
+		din =>  CamAD,
+		dout =>  UpConvOutSig,
+		en =>  CamADV,
+		clk =>  CamAPClk,
+		reset => FbWrARst
+	);
+		
+	
+----------------------------------------------------------------------------------
+-- Down Converter A
+----------------------------------------------------------------------------------
+	Inst_DownConverterA: entity work.BitDownConverter128to16 PORT MAP (
+		din =>  UpConvOutSig,
+		en	=>  CamADV,
+		reset =>  FbWrARst,
+		dout =>  DownConvOutSig,
+		clk =>  CamAPClk
+	);
+	
 ----------------------------------------------------------------------------------
 -- Frame Buffer
 ----------------------------------------------------------------------------------
@@ -203,7 +233,7 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		
 		ENA => CamADV,
 		RSTA_I => FbWrARst,
-		DIA => CamAD,
+		DIA => DownConvOutSig, --CamAD,
 		CLKA => CamAPClk,
 		
 		ENB => CamBDV,

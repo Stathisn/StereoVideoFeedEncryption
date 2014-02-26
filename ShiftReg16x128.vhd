@@ -38,7 +38,7 @@ end ShiftReg16x128;
 
 architecture Behavioral of ShiftReg16x128 is
 
-COMPONENT true_dp_ram_128x1
+COMPONENT true_dp_mem128x1
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -59,7 +59,7 @@ begin
 
 shiftIn <= din & shiftOutB(127 downto 16);
 
-TrueDPMem : true_dp_ram_128x1
+TrueDPMem : true_dp_mem128x1
   PORT MAP(
     clka =>  clk,
     wea =>  "0",
