@@ -60,3 +60,5 @@ ipcore_dir/true_dp_mem128x1.xise
 ipcore_dir/true_dp_mem128x1/doc/pg058-blk-mem-gen.pdf
 ipcore_dir/true_dp_mem128x1/example_design/true_dp_mem128x1_exdes.vhd
 ipcore_dir/true_dp_mem128x1/example_design/true_dp_mem128x1_prod.vhd
+*.sdbl
+*.sdbx

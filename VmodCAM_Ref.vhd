@@ -107,6 +107,18 @@ Generic (
 end VmodCAM_Ref;
 
 architecture Behavioral of VmodCAM_Ref is
+
+
+COMPONENT aes_128
+PORT (
+	clk : IN std_logic;
+	state : IN std_logic_vector(127 downto 0);
+	key : IN std_logic_vector(127 downto 0);
+	dout : OUT std_logic_vector(127 downto 0)
+	);
+END COMPONENT;
+
+
 signal SysClk, PClk, PClkX2, SysRst, SerClk, SerStb : std_logic;
 signal MSel : std_logic_vector(0 downto 0);
 
@@ -138,6 +150,7 @@ signal FbWrARst, FbWrBRst, int_FVA, int_FVB : std_logic;
 -- Bit converter signals
 signal UpConvOutSig : std_logic_vector(127 downto 0);
 signal DownConvOutSig : std_logic_vector(15 downto 0);
+signal CypherText : std_logic_vector(127 downto 0);
 
 begin
 
@@ -203,12 +216,22 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		reset => FbWrARst
 	);
 		
+
+----------------------------------------------------------------------------------
+-- AES Encryptor
+----------------------------------------------------------------------------------
+	Inst_aes_128: entity work.aes_128 PORT MAP (
+		clk =>  CamAPClk,
+		state =>  UpConvOutSig,
+		key =>  X"0123456789ABCDEF0123456789ABCDEF",
+		dout =>  CypherText
+		);
 	
 ----------------------------------------------------------------------------------
 -- Down Converter A
 ----------------------------------------------------------------------------------
 	Inst_DownConverterA: entity work.BitDownConverter128to16 PORT MAP (
-		din =>  UpConvOutSig,
+		din =>  CypherText,
 		en	=>  CamADV,
 		reset =>  FbWrARst,
 		dout =>  DownConvOutSig,
