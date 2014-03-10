@@ -151,6 +151,11 @@ signal FbWrARst, FbWrBRst, int_FVA, int_FVB : std_logic;
 signal UpConvOutSig : std_logic_vector(127 downto 0);
 signal DownConvOutSig : std_logic_vector(15 downto 0);
 signal CypherText : std_logic_vector(127 downto 0);
+signal PlainText : std_logic_vector(127 downto 0);
+
+signal switches : std_logic_vector(7 downto 0);
+signal AESinSig : std_logic_vector(127 downto 0);
+signal downConverterInSig : std_logic_vector(127 downto 0);
 
 begin
 
@@ -168,7 +173,7 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		CLK_O => open,
 		RSTN_I => RESET_I,
 		SW_I => SW_I,
-		SW_O => open,
+		SW_O => switches,
 		RSEL_O => open, --resolution selector synchronized with PClk
 		MSEL_O => MSel, --mode selector synchronized with PClk
 		CAMCLK_O => CamClk,
@@ -220,18 +225,43 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 ----------------------------------------------------------------------------------
 -- AES Encryptor
 ----------------------------------------------------------------------------------
-	Inst_aes_128: entity work.aes_128 PORT MAP (
+	Inst_aes_128_encrypt: entity work.aes_128 PORT MAP (
 		clk =>  CamAPClk,
-		state =>  UpConvOutSig,
+		state =>  AESinSig,
 		key =>  X"0123456789ABCDEF0123456789ABCDEF",
 		dout =>  CypherText
 		);
-	
+
+----------------------------------------------------------------------------------
+-- AES Decryptor
+----------------------------------------------------------------------------------
+	Inst_aes_128_decrypt: entity work.aes_128 PORT MAP (
+		clk =>  CamAPClk,
+		state =>  CypherText,
+		key =>  X"0123456789ABCDEF0123456789ABCDEF",
+		dout =>  PlainText
+		);
+
+----------------------------------------------------------------------------------
+-- Encryption State Selector Process
+-- Used for demonstration purposes, switch on encryption; switch off encryption;
+-- switch on decryption; switch off decryption
+----------------------------------------------------------------------------------
+	encrypt_enable_proc : process (switches(0)) --process to bypass encryption
+	begin	
+		case (switches(1 downto 0)) is
+			when "00" => downConverterInSig <= CypherText; -- encrypt, no decrypt
+			when "01" => downConverterInSig <= UpConvOutSig; -- no encrypt, no decrypt
+			when "10" => downConverterInSig <= PlainText; -- encrypt, decrypt
+			when others => downConverterInSig <= PlainText; -- encrypt, decrypt
+		end case;
+	end process;
+
 ----------------------------------------------------------------------------------
 -- Down Converter A
 ----------------------------------------------------------------------------------
 	Inst_DownConverterA: entity work.BitDownConverter128to16 PORT MAP (
-		din =>  CypherText,
+		din =>  downConverterInSig,
 		en	=>  CamADV,
 		reset =>  FbWrARst,
 		dout =>  DownConvOutSig,

@@ -21,34 +21,61 @@
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_DownConverterA - BitDownConverter128to16 - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_FBCtl - FBCtl - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_SysCon - SysCon - Behavioral</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_SysCon - SysCon - Behavioral/MODE_SYNC - InputSyncV - Behavioral</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_SysCon - SysCon - Behavioral/SYNC_SW - InputSyncV - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_UpConverterA - BitUpConverter16to128 - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_VideoTimingCtl - VideoTimingCtl - Behavioral</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128 - aes_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_decrypt - aes_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a1 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a10 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a2 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a3 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a4 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a5 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a6 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a7 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a8 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a9 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t0 - table_lookup</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t1 - table_lookup</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t2 - table_lookup</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t3 - table_lookup</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r2 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r3 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r4 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r5 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r6 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r7 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r8 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r9 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/rf - final_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_camctlA - CamCtl - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_camctlB - CamCtl - Behavioral</ClosedNode>
          <ClosedNode>/aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|aes_128.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>VmodCAM_Ref - Behavioral (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/VmodCAM_Ref.vhd)</SelectedItem>
+         <SelectedItem>t0 - table_lookup (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/table.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >17</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015f000000020000000000000000000000000000000064ffffffff0000008100000000000000020000015f0000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>VmodCAM_Ref - Behavioral (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/VmodCAM_Ref.vhd)</CurrentItem>
+      <CurrentItem>t0 - table_lookup (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/table.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -78,18 +105,20 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem>Implement Design</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem>Implement Design</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -142,7 +171,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
