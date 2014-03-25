@@ -89,3 +89,8 @@ isim/test_counter_isim_beh.exe.sim/tmp_save/_1
 *.sdb
 *.wdb
 *.ini
+isim/test_aes_128_isim_beh.exe.sim/tmp_save/_1
+*.vhi
+oneBitXOR.vhd
+oneBitXor.v
+test_aes_128.v

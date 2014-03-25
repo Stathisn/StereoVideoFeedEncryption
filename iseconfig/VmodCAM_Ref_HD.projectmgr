@@ -24,44 +24,61 @@
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_SysCon - SysCon - Behavioral/MODE_SYNC - InputSyncV - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_SysCon - SysCon - Behavioral/SYNC_SW - InputSyncV - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_UpConverterA - BitUpConverter16to128 - Behavioral</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_UpConverterA - BitUpConverter16to128 - Behavioral/SR16x128 - ShiftReg16x128 - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_VideoTimingCtl - VideoTimingCtl - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128 - aes_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_decrypt - aes_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a1 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a10 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a1_4 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a2 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a3 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a4 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a5 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a5_8 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a6 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a7 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a8 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a9 - expand_key_128</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/a9_10 - expand_key_128</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t0 - table_lookup</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t1 - table_lookup</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t2 - table_lookup</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1 - one_round/t3 - table_lookup</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r1_4 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r2 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r3 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r4 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r5 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r5_8 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r6 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r7 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r8 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r9 - one_round</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/r9_10 - one_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_aes_128_encrypt - aes_128/rf - final_round</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_camctlA - CamCtl - Behavioral</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd/Inst_camctlB - CamCtl - Behavioral</ClosedNode>
          <ClosedNode>/aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|aes_128.v</ClosedNode>
+         <ClosedNode>/final_round C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|round.v</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128/a1_4 - expand_key_128</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128/a5_8 - expand_key_128</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128/a9_10 - expand_key_128</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128/r1_4 - one_round</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128/r5_8 - one_round</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128/r9_10 - one_round</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128/rf - final_round</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>t0 - table_lookup (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/table.v)</SelectedItem>
+         <SelectedItem>VmodCAM_Ref - Behavioral (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/VmodCAM_Ref.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >17</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015f000000020000000000000000000000000000000064ffffffff0000008100000000000000020000015f0000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>t0 - table_lookup (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/table.v)</CurrentItem>
+      <CurrentItem>VmodCAM_Ref - Behavioral (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/VmodCAM_Ref.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -73,7 +90,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
@@ -104,7 +121,6 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
@@ -112,13 +128,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Implement Design</SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Implement Design</CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -164,15 +180,73 @@
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/VmodCAM_Ref - Behavioral C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|VmodCAM_Ref.vhd</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v</ClosedNode>
+         <ClosedNode>/test_aes_128 C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_aes_128.v/uut - aes_128</ClosedNode>
+         <ClosedNode>/test_counter C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|test_counter.v</ClosedNode>
+         <ClosedNode>/true_dp_ram_128x1 - true_dp_ram_128x1_a C:|Users|Nathan|Documents|GitHub|StereoVideoFeedEncryption|true_dp_ram_128x1.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>test_aes_128 (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/test_aes_128.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a80000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>test_aes_128 (C:/Users/Nathan/Documents/GitHub/StereoVideoFeedEncryption/test_aes_128.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
    </ItemView>
 </Project>

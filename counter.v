@@ -29,20 +29,26 @@ parameter COUNT_LIMIT = 10;
 
 input clk;
 input reset;
-output reg [COUNT_WIDTH - 1 : 0] count;
+output reg [COUNT_WIDTH - 1 : 0] count = 0;
 
-always @ (posedge reset)
-begin
-	if (UP_DOWN_COUNT == 0) begin
-		count <= COUNT_LIMIT;
-	end else begin
-		count <= 0;
-	end
-end
+//always @ (posedge reset)
+//begin
+//	if (UP_DOWN_COUNT == 0) begin
+//		count <= COUNT_LIMIT;
+//	end else begin
+//		count <= 0;
+//	end
+//end
 
 always @ (posedge clk)
 begin
-	if (reset != 1) begin
+	if (reset == 1) begin // Reset the counter to max/min value depending on up/down count
+		if (UP_DOWN_COUNT == 0) begin
+			count <= COUNT_LIMIT;
+		end else begin
+			count <= 0;
+		end
+	end else begin
 		if (UP_DOWN_COUNT == 0) begin // Check for count up or count down
 			if (count == 0) begin // Check if limit reached
 				count <= COUNT_LIMIT;

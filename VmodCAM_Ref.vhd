@@ -114,7 +114,8 @@ PORT (
 	clk : IN std_logic;
 	state : IN std_logic_vector(127 downto 0);
 	key : IN std_logic_vector(127 downto 0);
-	dout : OUT std_logic_vector(127 downto 0)
+	dout : OUT std_logic_vector(127 downto 0);
+	reset : IN std_logic
 	);
 END COMPONENT;
 
@@ -152,6 +153,9 @@ signal UpConvOutSig : std_logic_vector(127 downto 0);
 signal DownConvOutSig : std_logic_vector(15 downto 0);
 signal CypherText : std_logic_vector(127 downto 0);
 signal PlainText : std_logic_vector(127 downto 0);
+signal CypherTextBlock : std_logic_vector(127 downto 0);
+signal DecryptedCypherTextBlock : std_logic_vector(127 downto 0);
+
 
 signal switches : std_logic_vector(7 downto 0);
 signal AESinSig : std_logic_vector(127 downto 0);
@@ -220,16 +224,36 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		clk =>  CamAPClk,
 		reset => FbWrARst
 	);
-		
+	
+	Inst_cyphertext: entity work.bitwiseXOR
+		GENERIC MAP(
+			BIT_WIDTH => CypherText'length
+		)
+		PORT MAP(
+			in1 => CypherText,
+			in2 => UpConvOutSig,
+			output => CypherTextBlock
+		);
+
+	Inst_decrypted_cyphertext: entity work.bitwiseXOR
+		GENERIC MAP(
+			BIT_WIDTH => CypherText'length
+		)
+		PORT MAP(
+			in1 => CypherText,
+			in2 => CypherTextBlock,
+			output => DecryptedCypherTextBlock
+		);
 
 ----------------------------------------------------------------------------------
 -- AES Encryptor
 ----------------------------------------------------------------------------------
 	Inst_aes_128_encrypt: entity work.aes_128 PORT MAP (
 		clk =>  CamAPClk,
-		state =>  AESinSig,
+		state =>  X"0123456789ABCDEF0123456789ABCDEF", --UpConvOutSig,
 		key =>  X"0123456789ABCDEF0123456789ABCDEF",
-		dout =>  CypherText
+		dout =>  CypherText,
+		reset => '0'
 		);
 
 ----------------------------------------------------------------------------------
@@ -239,7 +263,8 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		clk =>  CamAPClk,
 		state =>  CypherText,
 		key =>  X"0123456789ABCDEF0123456789ABCDEF",
-		dout =>  PlainText
+		dout =>  PlainText,
+		reset => '0'
 		);
 
 ----------------------------------------------------------------------------------
@@ -247,12 +272,12 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 -- Used for demonstration purposes, switch on encryption; switch off encryption;
 -- switch on decryption; switch off decryption
 ----------------------------------------------------------------------------------
-	encrypt_enable_proc : process (switches(0)) --process to bypass encryption
+	encrypt_enable_proc : process (CamAPClk) --process to bypass encryption
 	begin	
 		case (switches(1 downto 0)) is
-			when "00" => downConverterInSig <= CypherText; -- encrypt, no decrypt
+			when "00" => downConverterInSig <= CypherTextBlock; -- encrypt, no decrypt
 			when "01" => downConverterInSig <= UpConvOutSig; -- no encrypt, no decrypt
-			when "10" => downConverterInSig <= PlainText; -- encrypt, decrypt
+			when "10" => downConverterInSig <= DecryptedCypherTextBlock; -- encrypt, decrypt
 			when others => downConverterInSig <= PlainText; -- encrypt, decrypt
 		end case;
 	end process;
