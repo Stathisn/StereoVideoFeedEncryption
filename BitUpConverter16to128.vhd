@@ -78,7 +78,7 @@ begin
           dout => word
         );
 
-	counter_8bit : counter 
+	counter_3bit : counter 
 		GENERIC MAP(
 			BIT_WIDTH => 3,
 			COUNT_ENABLE => 1,

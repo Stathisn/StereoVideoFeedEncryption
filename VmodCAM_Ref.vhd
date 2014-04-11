@@ -155,6 +155,9 @@ signal CypherText : std_logic_vector(127 downto 0);
 signal PlainText : std_logic_vector(127 downto 0);
 signal CypherTextBlock : std_logic_vector(127 downto 0);
 signal DecryptedCypherTextBlock : std_logic_vector(127 downto 0);
+signal Nonce : std_logic_vector(63 downto 0) := X"0123456789ABCDEF";
+signal CTR_counter : std_logic_vector(63 downto 0);
+signal AES_State_encryptor : std_logic_vector(127 downto 0);
 
 
 signal switches : std_logic_vector(7 downto 0);
@@ -225,6 +228,18 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 		reset => FbWrARst
 	);
 	
+	counter_64bit : entity work.counter 
+		GENERIC MAP(
+			BIT_WIDTH => 64,
+			COUNT_ENABLE => 1,
+			DOWN_COUNT => 0
+			)
+		PORT MAP(
+			clk => CamAPClk,
+			reset => '0',
+			en => '1',
+			count => CTR_counter);
+	
 	Inst_cyphertext: entity work.bitwiseXOR
 		GENERIC MAP(
 			BIT_WIDTH => CypherText'length
@@ -248,9 +263,11 @@ LED_O <= VtcHs & VtcHs & VtcVde & async_rst & MSel(0) & "000";
 ----------------------------------------------------------------------------------
 -- AES Encryptor
 ----------------------------------------------------------------------------------
+	AES_State_encryptor <= Nonce & CTR_counter;
+	
 	Inst_aes_128_encrypt: entity work.aes_128 PORT MAP (
 		clk =>  CamAPClk,
-		state =>  X"0123456789ABCDEF0123456789ABCDEF", --UpConvOutSig,
+		state =>  AES_State_encryptor, --UpConvOutSig,
 		key =>  X"0123456789ABCDEF0123456789ABCDEF",
 		dout =>  CypherText,
 		reset => '0'
